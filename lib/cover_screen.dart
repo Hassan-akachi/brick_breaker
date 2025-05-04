@@ -42,7 +42,7 @@ class CoverScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(height: 10), // Spacing for better positioning
+          //const SizedBox(height: 10), // Spacing for better positioning
           Text(
             "Brick Breaker",
             style: gameFont,
