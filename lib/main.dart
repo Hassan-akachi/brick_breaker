@@ -183,26 +183,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // Change ball direction based on which side was hit
           switch (min) {
             case "left":
+              //if the left side of the brick was hit then go to the left side
               ballXDirection = direction.LEFT;
               break;
             case "right":
+            //if the right side of the brick was hit then go to the right side
               ballXDirection = direction.RIGHT;
               break;
             case "up":
+            //if the up side of the brick was hit then go to the up side
               ballYDirection = direction.UP;
               break;
             case "down":
+            //if the bottom side of the brick was hit then go to the bottom side
               ballYDirection = direction.DOWN;
               break;
           }
 
-          // NOTE: There appears to be redundant code below that always sets
-          // the ball direction in all four directions, which likely causes issues
-          // This might be a bug in the original code
-          ballXDirection = direction.LEFT;
-          ballXDirection = direction.RIGHT;
-          ballYDirection = direction.UP;
-          ballYDirection = direction.DOWN;
         });
       }
     }
